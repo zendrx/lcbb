@@ -1,0 +1,17 @@
+name: lcbb
+version: 0.1.0
+
+authors:
+  - zendrx <ynwghosted@icloud.com>
+
+targets:
+  lcbb:
+    main: src/lcbb.cr
+
+dependencies:
+  admiral:
+    github: jwaldrip/admiral-cr
+
+crystal: ">= 1.19.1"
+
+license: MIT
