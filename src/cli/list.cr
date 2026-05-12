@@ -2,7 +2,7 @@ require "http/client"
 require "json"
 
 def list_challenges(level : String)
-  url = "https://api.github.com/repos/zendrx/challenges/contents/#{level}"
+  url = "https://api.github.com/repos/zendrx/lcbb/contents/#{level}"
   response = HTTP::Client.get(url)
   if response.status_code == 200
     body = JSON.parse(response.body)
